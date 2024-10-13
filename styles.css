@@ -1,0 +1,83 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fefefe;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+/* Arrows */
+
+.arrow-grid {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  gap: 10px;
+  background-color: #eee;
+  padding: 30px;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4ec1ff;
+  border: 2px solid #4ec1ff;
+  border-radius: 10px;
+  font-size: 4rem;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.arrow.up {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.arrow.left {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.arrow.right {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+.arrow.down {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+/* Car information */
+.car-information-card {
+  width: 300px;
+  height: 350px;
+  background-color: #eaf6ff;
+  border: 2px solid #d5ecff;
+  font-size: 1.2rem;
+  padding: 30px;
+}
+
+.card.title {
+  font-size: xx-large;
+  padding-bottom: 20px;
+}
+
+.card.body {
+  padding: 5px;
+}
